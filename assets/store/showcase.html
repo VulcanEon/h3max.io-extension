@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>H3 Max Video Prompt Studio — Store Artwork</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+      }
+
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background:
+          radial-gradient(circle at 14% 12%, rgba(122, 91, 255, 0.42), transparent 34%),
+          radial-gradient(circle at 76% 26%, rgba(232, 98, 198, 0.24), transparent 32%),
+          radial-gradient(circle at 42% 110%, rgba(255, 156, 122, 0.2), transparent 34%),
+          #0d0b12;
+        color: #f8f6fb;
+        font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+      }
+
+      .layout {
+        display: grid;
+        width: 100%;
+        height: 100%;
+        grid-template-columns: minmax(0, 1fr) 398px;
+        gap: 56px;
+        align-items: center;
+        padding: 34px 74px 34px 88px;
+      }
+
+      .copy {
+        max-width: 620px;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        margin-bottom: 32px;
+        color: #d9cfff;
+        font-size: 18px;
+        font-weight: 750;
+      }
+
+      .brand img {
+        width: 58px;
+        height: 58px;
+        border-radius: 16px;
+        box-shadow: 0 16px 40px rgba(122, 91, 255, 0.4);
+      }
+
+      h1 {
+        max-width: 620px;
+        margin: 0;
+        font-size: 63px;
+        line-height: 0.98;
+        letter-spacing: -0.055em;
+      }
+
+      h1 span {
+        background: linear-gradient(100deg, #a995ff, #f581d8 56%, #ffb09a);
+        background-clip: text;
+        color: transparent;
+      }
+
+      .tagline {
+        max-width: 540px;
+        margin: 22px 0 28px;
+        color: #bcb4c8;
+        font-size: 20px;
+        line-height: 1.45;
+      }
+
+      .features {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 9px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+
+      .features li {
+        border: 1px solid rgba(255, 255, 255, 0.13);
+        border-radius: 999px;
+        padding: 8px 13px;
+        background: rgba(255, 255, 255, 0.05);
+        color: #e7e2eb;
+        font-size: 12px;
+        font-weight: 650;
+      }
+
+      .extension-frame {
+        width: 400px;
+        height: 900px;
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        border-radius: 20px;
+        background: #0d0b12;
+        box-shadow: 0 28px 80px rgba(0, 0, 0, 0.5);
+        transform: scale(0.72);
+        transform-origin: center;
+      }
+
+      .frame-wrap {
+        display: grid;
+        width: 398px;
+        height: 652px;
+        place-items: center;
+      }
+
+      @media (max-width: 600px) {
+        .layout {
+          display: block;
+          padding: 20px 24px;
+        }
+
+        .brand {
+          margin-bottom: 12px;
+          font-size: 14px;
+        }
+
+        .brand img {
+          width: 40px;
+          height: 40px;
+          border-radius: 11px;
+        }
+
+        h1 {
+          font-size: 34px;
+        }
+
+        .tagline {
+          margin: 10px 0 12px;
+          font-size: 13px;
+        }
+
+        .features {
+          gap: 7px;
+        }
+
+        .features li {
+          padding: 5px 8px;
+          font-size: 9px;
+        }
+
+        .frame-wrap {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="layout">
+      <section class="copy">
+        <div class="brand">
+          <img src="../logo.png" alt="" />
+          <span>H3 Max Video Prompt Studio</span>
+        </div>
+        <h1>Plan better <span>H3 Max videos.</span></h1>
+        <p class="tagline">
+          Turn rough scene ideas into structured prompts without leaving your
+          current tab.
+        </p>
+        <ul class="features">
+          <li>6 shot starters</li>
+          <li>Camera direction</li>
+          <li>Synchronized audio</li>
+          <li>Local &amp; private</li>
+        </ul>
+      </section>
+      <div class="frame-wrap">
+        <iframe
+          class="extension-frame"
+          src="../../popup.html"
+          title="H3 Max Video Prompt Studio preview"
+        ></iframe>
+      </div>
+    </main>
+  </body>
+</html>

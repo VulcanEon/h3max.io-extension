@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>H3 Max Video Prompt Studio</title>
+    <link rel="icon" href="assets/icons/icon-32.png" />
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="hero">
+        <div class="brand-row">
+          <img
+            class="brand-mark"
+            src="assets/logo.png"
+            width="44"
+            height="44"
+            alt="H3 Max"
+          />
+          <div>
+            <p class="eyebrow">h3max.io companion</p>
+            <h1>Video Prompt Studio</h1>
+          </div>
+        </div>
+        <p class="intro">
+          Turn a rough scene idea into a production-ready H3 Max prompt.
+        </p>
+      </header>
+
+      <section class="panel" aria-labelledby="starter-heading">
+        <div class="section-heading">
+          <div>
+            <p class="step">01</p>
+            <h2 id="starter-heading">Choose a shot</h2>
+          </div>
+          <span class="hint">6 starters</span>
+        </div>
+        <div
+          id="preset-grid"
+          class="preset-grid"
+          role="radiogroup"
+          aria-labelledby="starter-heading"
+        ></div>
+      </section>
+
+      <section class="panel" aria-labelledby="details-heading">
+        <div class="section-heading">
+          <div>
+            <p class="step">02</p>
+            <h2 id="details-heading">Direct the scene</h2>
+          </div>
+        </div>
+        <label class="sr-only" for="scene-details">Scene details</label>
+        <textarea
+          id="scene-details"
+          rows="3"
+          placeholder="Subject, action, setting, mood, lighting, key visual details…"
+        ></textarea>
+
+        <div class="controls-grid">
+          <label>
+            <span>Duration</span>
+            <select id="duration">
+              <option value="5">5 seconds</option>
+              <option value="10" selected>10 seconds</option>
+              <option value="15">15 seconds</option>
+            </select>
+          </label>
+          <label>
+            <span>Resolution</span>
+            <select id="resolution">
+              <option value="768P" selected>768P</option>
+              <option value="480P">480P</option>
+            </select>
+          </label>
+        </div>
+
+        <label class="field">
+          <span>Camera movement</span>
+          <select id="camera">
+            <option value="A smooth cinematic push-in">Smooth push-in</option>
+            <option value="A slow orbital camera move">Slow orbit</option>
+            <option value="A controlled handheld tracking shot">Handheld tracking</option>
+            <option value="A wide locked-off composition">Locked-off wide</option>
+            <option value="A dramatic aerial reveal">Aerial reveal</option>
+          </select>
+        </label>
+
+        <label class="audio-toggle">
+          <span>
+            <strong>Native synchronized audio</strong>
+            <small>Include ambience, effects, and timing cues</small>
+          </span>
+          <input id="audio" type="checkbox" checked />
+          <span class="switch" aria-hidden="true"></span>
+        </label>
+      </section>
+
+      <section class="panel output-panel" aria-labelledby="output-heading">
+        <div class="section-heading">
+          <div>
+            <p class="step">03</p>
+            <h2 id="output-heading">Your H3 Max prompt</h2>
+          </div>
+          <button id="reset-button" class="text-button" type="button">Reset</button>
+        </div>
+        <label class="sr-only" for="prompt-output">Generated prompt</label>
+        <textarea id="prompt-output" rows="7" readonly></textarea>
+        <p id="status" class="status" aria-live="polite"></p>
+      </section>
+
+      <footer class="actions">
+        <button id="copy-button" class="button button-primary" type="button">
+          Copy prompt
+        </button>
+        <button id="open-button" class="button button-secondary" type="button">
+          Open h3max.io
+        </button>
+      </footer>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
