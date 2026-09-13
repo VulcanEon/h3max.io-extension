@@ -58,6 +58,7 @@ No. All HTML, CSS, and JavaScript are packaged with the extension.
 - 1280 × 800 live screenshot: `assets/store/popup-screenshot.png`
 - 1280 × 800 live screenshot with a completed prompt: `assets/store/popup-screenshot-filled.png`
 - 440 × 280 small promotional tile: `assets/store/small-promo-440x280.png`
+- 1400 × 560 marquee promotional tile: `assets/store/marquee-promo-1400x560.png`
 
 ## Before Publishing
 

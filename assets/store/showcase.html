@@ -122,6 +122,36 @@
         place-items: center;
       }
 
+      @media (min-width: 1000px) and (max-height: 620px) {
+        .layout {
+          grid-template-columns: minmax(0, 1fr) 410px;
+          gap: 48px;
+          padding: 28px 84px;
+        }
+
+        .brand {
+          margin-bottom: 20px;
+        }
+
+        h1 {
+          font-size: 56px;
+        }
+
+        .tagline {
+          margin: 18px 0 22px;
+          font-size: 18px;
+        }
+
+        .extension-frame {
+          transform: scale(0.55);
+        }
+
+        .frame-wrap {
+          width: 410px;
+          height: 504px;
+        }
+      }
+
       @media (max-width: 600px) {
         .layout {
           display: block;
