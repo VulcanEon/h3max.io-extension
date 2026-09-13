@@ -70,6 +70,7 @@ Read the full [privacy policy](docs/privacy-policy.md).
 - `manifest.json` — Manifest V3 configuration
 - `service-worker.js` — opens the side panel from the toolbar icon
 - `popup.html`, `popup.css`, `popup.js` — prompt studio interface and behavior
+- `assets/logo.png`, `assets/favicon.ico` — h3max.io brand assets
 - `assets/icons/` — Chrome extension icons
 - `assets/store/` — Chrome Web Store listing artwork
 - `docs/` — listing copy, reviewer instructions, privacy policy, and submission checklist

@@ -8,6 +8,7 @@
 - `popup.css`
 - `popup.js`
 - `assets/logo.png`
+- `assets/favicon.ico`
 - `assets/icons/icon-16.png`
 - `assets/icons/icon-32.png`
 - `assets/icons/icon-48.png`
@@ -65,4 +66,4 @@ No. All HTML, CSS, and JavaScript are packaged with the extension.
 - confirm there are no extension console errors
 - ensure listing copy matches the current feature set
 - ensure the public privacy policy URL is available
-- upload the ZIP from `dist/h3max-video-prompt-studio-1.0.0.zip`
+- upload the ZIP from `dist/h3max-video-prompt-studio-1.0.1.zip`
